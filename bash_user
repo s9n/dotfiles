@@ -1,0 +1,2 @@
+[[ -f ~/.git_aliases ]] && source ~/.git_aliases
+[[ -f ~/.bash_brew ]] && source ~/.bash_brew
