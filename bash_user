@@ -1,2 +1,9 @@
 [[ -f ~/.git_aliases ]] && source ~/.git_aliases
 [[ -f ~/.bash_brew ]] && source ~/.bash_brew
+
+# preserve all history
+export HISTCONTROL=erasedups
+export HISTSIZE="NOTHING"
+export HISTFILESIZE="NOTHING"
+shopt -s histappend
+export PROMPT_COMMAND='history -a;echo'
