@@ -7,3 +7,6 @@ export HISTSIZE="NOTHING"
 export HISTFILESIZE="NOTHING"
 shopt -s histappend
 export PROMPT_COMMAND='history -a;echo'
+
+# remap capslock to escape
+setxkbmap -option caps:escape
