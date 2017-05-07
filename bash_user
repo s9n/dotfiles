@@ -1,5 +1,8 @@
 [[ -f ~/.git_aliases ]] && source ~/.git_aliases
 [[ -f ~/.bash_brew ]] && source ~/.bash_brew
+[[ -f ~/.bash_python ]] && source ~/.bash_python
+[[ -f ~/.bash_gcloud ]] && source ~/.bash_gcloud
+[[ -f ~/.bash_colourscheme ]] && source ~/.bash_colourscheme ]]
 
 # preserve all history
 export HISTCONTROL=erasedups
@@ -8,5 +11,9 @@ export HISTFILESIZE="NOTHING"
 shopt -s histappend
 export PROMPT_COMMAND='history -a;echo'
 
+h() { if [ -z "$1" ]; then history; else history | grep "$@"; history -d $((HISTCMD-1)); fi; }
+
 # remap capslock to escape
 setxkbmap -option caps:escape
+
+export LESS="FRX"

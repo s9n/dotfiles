@@ -1,0 +1,7 @@
+export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages:/usr/local/lib/python2.7/dist-packages
+
+if [[ -f /usr/local/bin/virtualenvwrapper.sh ]] ; then
+  export WORKON_HOME="${HOME}/.venvs"
+  [[ ! -d "${WORKON_HOME}" ]] && mkdir -p ${WORKON_HOME}
+  source /usr/local/bin/virtualenvwrapper.sh
+fi
