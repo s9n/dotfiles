@@ -11,6 +11,9 @@ export HISTFILESIZE="NOTHING"
 shopt -s histappend
 export PROMPT_COMMAND='history -a;echo'
 
+# use vim
+export EDITOR=vim
+
 h() { if [ -z "$1" ]; then history; else history | grep "$@"; history -d $((HISTCMD-1)); fi; }
 
 # remap capslock to escape
