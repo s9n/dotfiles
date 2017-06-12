@@ -1,4 +1,4 @@
-BASE16_SHELL=$HOME/.config/base16-shell/
+BASE16_SHELL=$HOME/.config/base16-shell
 BASE16_SCHEME=$BASE16_SHELL/scripts/base16-oceanicnext.sh
 
 [[ -f $BASE16_SCHEME ]] && source $BASE16_SCHEME
