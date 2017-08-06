@@ -8,6 +8,7 @@ set softtabstop=2
 set tabstop=2
 set t_Co=256
 let g:base16_shell_path='/home/s9n/.config/base16-shell/scripts/'
-colorscheme base16-oceanicnext
 let base16colorspace=256
+set background=dark
+colorscheme base16-oceanicnext
 syntax on
